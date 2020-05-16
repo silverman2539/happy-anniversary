@@ -1,0 +1,777 @@
+<html>
+	<head>
+        <title>Happy Anniversary!</title>
+        <link rel="shortcut icon" href="heart.ico">
+        <style>
+            body
+            {
+                background-color: lavenderblush;  
+                border-style: solid;
+                border-color: lightcoral;
+				color: gray;
+                text-align: center;
+                padding: 25px;
+                font-family: Impact, serif;
+				font-size: 20;
+            }
+            #title
+            {
+                color: gray;
+                font-size: 25px;
+            }
+            button
+            {
+                color: gray;
+                font-size: 20px;
+                font-family: Impact, serif;
+                background-color: whitesmoke;
+                border-color: lightcoral;
+            }
+            button:hover
+            {
+                color: whitesmoke;
+                background-color:lightcoral;
+                border-color: gray;
+				opacity: 75%;
+				transition: 0.5s;
+            }
+            button:disabled
+            {
+                color: gray;
+                background-color: lavenderblush;
+                border-color: darkgray;
+				opacity: 50%;
+            }
+            input
+            {
+                font-size: 15px;
+                text-align: center;
+            }
+			img
+			{
+				border-style: solid;
+				border-color: gray;
+				height: 250;
+			}
+        </style>
+    </head>
+	
+	<body>
+		
+		<p style="font-size:25px; border-bottom:solid; border-color:lightcoral; border-width:thin; padding:15px;">Happy Anniversary!</p>
+		<p>Click on the cards to see the other side!</p>
+		<p>Click on them again to go back to the original side!</p>
+		<p>I have the explanation for what this is on the back of the joker cards!</p>
+		<p>But the words are really small so you'll probably need to zoom in to read it!</p>
+		<p>I hope you like it!</p>
+		<br>
+		<img src="Cards-98.jpg" id="joker1-f" height="200" onclick="Joker1()">
+		<img src="Cards-105.jpg" id="joker1-b" height="200" onclick="Joker1Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-97.jpg" id="joker2-f" height="200" onclick="Joker2()">
+		<img src="Cards-106.jpg" id="joker2-b" height="200" onclick="Joker2Reverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-0.jpg" id="dinoA-f" onclick="DinoA()">
+		<img src="Cards-11.jpg" id="dinoA-b" onclick="DinoAReverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-22.jpg" id="burgerA-f" onclick="BurgerA()">
+		<img src="Cards-31.jpg" id="burgerA-b" onclick="BurgerAReverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-44.jpg" id="guitarA-f" onclick="GuitarA()">
+		<img src="Cards-51.jpg" id="guitarA-b" onclick="GuitarAReverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-75.jpg" id="paintA-f" onclick="PaintA()">
+		<img src="Cards-86.jpg" id="paintA-b" onclick="PaintAReverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-1.jpg" id="dino2-f" onclick="Dino2()">
+		<img src="Cards-10.jpg" id="dino2-b" onclick="Dino2Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-23.jpg" id="burger2-f" onclick="Burger2()">
+		<img src="Cards-30.jpg" id="burger2-b" onclick="Burger2Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-54.jpg" id="guitar2-f" onclick="Guitar2()">
+		<img src="Cards-65.jpg" id="guitar2-b" onclick="Guitar2Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-76.jpg" id="paint2-f" onclick="Paint2()">
+		<img src="Cards-85.jpg" id="paint2-b" onclick="Paint2Reverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-2.jpg" id="dino3-f" onclick="Dino3()">
+		<img src="Cards-9.jpg" id="dino3-b" onclick="Dino3Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-24.jpg" id="burger3-f" onclick="Burger3()">
+		<img src="Cards-35.jpg" id="burger3-b" onclick="Burger3Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-55.jpg" id="guitar3-f" onclick="Guitar3()">
+		<img src="Cards-64.jpg" id="guitar3-b" onclick="Guitar3Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-77.jpg" id="paint3-f" onclick="Paint3()">
+		<img src="Cards-84.jpg" id="paint3-b" onclick="Paint3Reverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-3.jpg" id="dino4-f" onclick="Dino4()">
+		<img src="Cards-14.jpg" id="dino4-b" onclick="Dino4Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-25.jpg" id="burger4-f" onclick="Burger4()">
+		<img src="Cards-34.jpg" id="burger4-b" onclick="Burger4Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-56.jpg" id="guitar4-f" onclick="Guitar4()">
+		<img src="Cards-63.jpg" id="guitar4-b" onclick="Guitar4Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-78.jpg" id="paint4-f" onclick="Paint4()">
+		<img src="Cards-89.jpg" id="paint4-b" onclick="Paint4Reverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-4.jpg" id="dino5-f" onclick="Dino5()">
+		<img src="Cards-13.jpg" id="dino5-b" onclick="Dino5Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-26.jpg" id="burger5-f" onclick="Burger5()">
+		<img src="Cards-33.jpg" id="burger5-b" onclick="Burger5Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-57.jpg" id="guitar5-f" onclick="Guitar5()">
+		<img src="Cards-68.jpg" id="guitar5-b" onclick="Guitar5Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-79.jpg" id="paint5-f" onclick="Paint5()">
+		<img src="Cards-88.jpg" id="paint5-b" onclick="Paint5Reverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-5.jpg" id="dino6-f" onclick="Dino6()">
+		<img src="Cards-12.jpg" id="dino6-b" onclick="Dino6Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-36.jpg" id="burger6-f" onclick="Burger6()">
+		<img src="Cards-47.jpg" id="burger6-b" onclick="Burger6Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-58.jpg" id="guitar6-f" onclick="Guitar6()">
+		<img src="Cards-67.jpg" id="guitar6-b" onclick="Guitar6Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-80.jpg" id="paint6-f" onclick="Paint6()">
+		<img src="Cards-87.jpg" id="paint6-b" onclick="Paint6Reverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-6.jpg" id="dino7-f" onclick="Dino7()">
+		<img src="Cards-17.jpg" id="dino7-b" onclick="Dino7Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-37.jpg" id="burger7-f" onclick="Burger7()">
+		<img src="Cards-46.jpg" id="burger7-b" onclick="Burger7Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-59.jpg" id="guitar7-f" onclick="Guitar7()">
+		<img src="Cards-66.jpg" id="guitar7-b" onclick="Guitar7Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-90.jpg" id="paint7-f" onclick="Paint7()">
+		<img src="Cards-101.jpg" id="paint7-b" onclick="Paint7Reverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-7.jpg" id="dino8-f" onclick="Dino8()">
+		<img src="Cards-16.jpg" id="dino8-b" onclick="Dino8Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-38.jpg" id="burger8-f" onclick="Burger8()">
+		<img src="Cards-45.jpg" id="burger8-b" onclick="Burger8Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-60.jpg" id="guitar8-f" onclick="Guitar8()">
+		<img src="Cards-71.jpg" id="guitar8-b" onclick="Guitar8Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-91.jpg" id="paint8-f" onclick="Paint8()">
+		<img src="Cards-100.jpg" id="paint8-b" onclick="Paint8Reverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-8.jpg" id="dino9-f" onclick="Dino9()">
+		<img src="Cards-15.jpg" id="dino9-b" onclick="Dino9Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-39.jpg" id="burger9-f" onclick="Burger9()">
+		<img src="Cards-50.jpg" id="burger9-b" onclick="Burger9Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-61.jpg" id="guitar9-f" onclick="Guitar9()">
+		<img src="Cards-70.jpg" id="guitar9-b" onclick="Guitar9Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-92.jpg" id="paint9-f" onclick="Paint9()">
+		<img src="Cards-99.jpg" id="paint9-b" onclick="Paint9Reverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-18.jpg" id="dino10-f" onclick="Dino10()">
+		<img src="Cards-29.jpg" id="dino10-b" onclick="Dino10Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-40.jpg" id="burger10-f" onclick="Burger10()">
+		<img src="Cards-49.jpg" id="burger10-b" onclick="Burger10Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-62.jpg" id="guitar10-f" onclick="Guitar10()">
+		<img src="Cards-69.jpg" id="guitar10-b" onclick="Guitar10Reverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-93.jpg" id="paint10-f" onclick="Paint10()">
+		<img src="Cards-104.jpg" id="paint10-b" onclick="Paint10Reverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-19.jpg" id="dinoJ-f" onclick="DinoJ()">
+		<img src="Cards-28.jpg" id="dinoJ-b" onclick="DinoJReverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-41.jpg" id="burgerJ-f" onclick="BurgerJ()">
+		<img src="Cards-48.jpg" id="burgerJ-b" onclick="BurgerJReverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-72.jpg" id="guitarJ-f" onclick="GuitarJ()">
+		<img src="Cards-83.jpg" id="guitarJ-b" onclick="GuitarJReverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-94.jpg" id="paintJ-f" onclick="PaintJ()">
+		<img src="Cards-103.jpg" id="paintJ-b" onclick="PaintJReverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-20.jpg" id="dinoQ-f" onclick="DinoQ()">
+		<img src="Cards-27.jpg" id="dinoQ-b" onclick="DinoQReverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-42.jpg" id="burgerQ-f" onclick="BurgerQ()">
+		<img src="Cards-53.jpg" id="burgerQ-b" onclick="BurgerQReverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-73.jpg" id="guitarQ-f" onclick="GuitarQ()">
+		<img src="Cards-82.jpg" id="guitarQ-b" onclick="GuitarQReverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-95.jpg" id="paintQ-f" onclick="PaintQ()">
+		<img src="Cards-102.jpg" id="paintQ-b" onclick="PaintQReverse()" style="display:none;">
+		<br><br>
+		<img src="Cards-21.jpg" id="dinoK-f" onclick="DinoK()">
+		<img src="Cards-32.jpg" id="dinoK-b" onclick="DinoKReverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-43.jpg" id="burgerK-f" onclick="BurgerK()">
+		<img src="Cards-52.jpg" id="burgerK-b" onclick="BurgerKReverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-74.jpg" id="guitarK-f" onclick="GuitarK()">
+		<img src="Cards-81.jpg" id="guitarK-b" onclick="GuitarKReverse()" style="display:none;">
+		&nbsp; &nbsp;
+		<img src="Cards-96.jpg" id="paintK-f" onclick="PaintK()">
+		<img src="Cards-107.jpg" id="paintK-b" onclick="PaintKReverse()" style="display:none;">
+		<br><br><br>
+		<button onclick="document.location = 'presents.html'" style="font-size:15;">Click here to go back to the last page</button>
+		<br><br>
+		<button onclick="document.location = 'home.html'" style="font-size:15;">Click here to go back to the home page</button>
+		
+		<script>
+			function Joker1()
+            {
+                document.getElementById("joker1-f").style.display = "none";
+                document.getElementById("joker1-b").style.display = "";
+            }
+            function Joker1Reverse()
+            {
+                document.getElementById("joker1-f").style.display = "";
+                document.getElementById("joker1-b").style.display = "none";
+            }
+			function Joker2()
+            {
+                document.getElementById("joker2-f").style.display = "none";
+                document.getElementById("joker2-b").style.display = "";
+            }
+            function Joker2Reverse()
+            {
+                document.getElementById("joker2-f").style.display = "";
+                document.getElementById("joker2-b").style.display = "none";
+            }
+            function DinoA()
+            {
+                document.getElementById("dinoA-f").style.display = "none";
+                document.getElementById("dinoA-b").style.display = "";
+            }
+            function DinoAReverse()
+            {
+                document.getElementById("dinoA-f").style.display = "";
+                document.getElementById("dinoA-b").style.display = "none";
+            }
+            function Dino2()
+            {
+                document.getElementById("dino2-f").style.display = "none";
+                document.getElementById("dino2-b").style.display = "";
+            }
+            function Dino2Reverse()
+            {
+                document.getElementById("dino2-f").style.display = "";
+                document.getElementById("dino2-b").style.display = "none";
+            }
+            function Dino3()
+            {
+                document.getElementById("dino3-f").style.display = "none";
+                document.getElementById("dino3-b").style.display = "";
+            }
+            function Dino3Reverse()
+            {
+                document.getElementById("dino3-f").style.display = "";
+                document.getElementById("dino3-b").style.display = "none";
+            }
+            function Dino4()
+            {
+                document.getElementById("dino4-f").style.display = "none";
+                document.getElementById("dino4-b").style.display = "";
+            }
+            function Dino4Reverse()
+            {
+                document.getElementById("dino4-f").style.display = "";
+                document.getElementById("dino4-b").style.display = "none";
+            }
+            function Dino5()
+            {
+                document.getElementById("dino5-f").style.display = "none";
+                document.getElementById("dino5-b").style.display = "";
+            }
+            function Dino5Reverse()
+            {
+                document.getElementById("dino5-f").style.display = "";
+                document.getElementById("dino5-b").style.display = "none";
+            }
+            function Dino6()
+            {
+                document.getElementById("dino6-f").style.display = "none";
+                document.getElementById("dino6-b").style.display = "";
+            }
+            function Dino6Reverse()
+            {
+                document.getElementById("dino6-f").style.display = "";
+                document.getElementById("dino6-b").style.display = "none";
+            }
+            function Dino7()
+            {
+                document.getElementById("dino7-f").style.display = "none";
+                document.getElementById("dino7-b").style.display = "";
+            }
+            function Dino7Reverse()
+            {
+                document.getElementById("dino7-f").style.display = "";
+                document.getElementById("dino7-b").style.display = "none";
+            }
+            function Dino8()
+            {
+                document.getElementById("dino8-f").style.display = "none";
+                document.getElementById("dino8-b").style.display = "";
+            }
+            function Dino8Reverse()
+            {
+                document.getElementById("dino8-f").style.display = "";
+                document.getElementById("dino8-b").style.display = "none";
+            }
+            function Dino9()
+            {
+                document.getElementById("dino9-f").style.display = "none";
+                document.getElementById("dino9-b").style.display = "";
+            }
+            function Dino9Reverse()
+            {
+                document.getElementById("dino9-f").style.display = "";
+                document.getElementById("dino9-b").style.display = "none";
+            }
+            function Dino10()
+            {
+                document.getElementById("dino10-f").style.display = "none";
+                document.getElementById("dino10-b").style.display = "";
+            }
+            function Dino10Reverse()
+            {
+                document.getElementById("dino10-f").style.display = "";
+                document.getElementById("dino10-b").style.display = "none";
+            }
+            function DinoJ()
+            {
+                document.getElementById("dinoJ-f").style.display = "none";
+                document.getElementById("dinoJ-b").style.display = "";
+            }
+            function DinoJReverse()
+            {
+                document.getElementById("dinoJ-f").style.display = "";
+                document.getElementById("dinoJ-b").style.display = "none";
+            }
+            function DinoQ()
+            {
+                document.getElementById("dinoQ-f").style.display = "none";
+                document.getElementById("dinoQ-b").style.display = "";
+            }
+            function DinoQReverse()
+            {
+                document.getElementById("dinoQ-f").style.display = "";
+                document.getElementById("dinoQ-b").style.display = "none";
+            }
+            function DinoK()
+            {
+                document.getElementById("dinoK-f").style.display = "none";
+                document.getElementById("dinoK-b").style.display = "";
+            }
+            function DinoKReverse()
+            {
+                document.getElementById("dinoK-f").style.display = "";
+                document.getElementById("dinoK-b").style.display = "none";
+            }
+            function BurgerA()
+            {
+                document.getElementById("burgerA-f").style.display = "none";
+                document.getElementById("burgerA-b").style.display = "";
+            }
+            function BurgerAReverse()
+            {
+                document.getElementById("burgerA-f").style.display = "";
+                document.getElementById("burgerA-b").style.display = "none";
+            }
+            function Burger2()
+            {
+                document.getElementById("burger2-f").style.display = "none";
+                document.getElementById("burger2-b").style.display = "";
+            }
+            function Burger2Reverse()
+            {
+                document.getElementById("burger2-f").style.display = "";
+                document.getElementById("burger2-b").style.display = "none";
+            }
+            function Burger3()
+            {
+                document.getElementById("burger3-f").style.display = "none";
+                document.getElementById("burger3-b").style.display = "";
+            }
+            function Burger3Reverse()
+            {
+                document.getElementById("burger3-f").style.display = "";
+                document.getElementById("burger3-b").style.display = "none";
+            }
+            function Burger4()
+            {
+                document.getElementById("burger4-f").style.display = "none";
+                document.getElementById("burger4-b").style.display = "";
+            }
+            function Burger4Reverse()
+            {
+                document.getElementById("burger4-f").style.display = "";
+                document.getElementById("burger4-b").style.display = "none";
+            }
+            function Burger5()
+            {
+                document.getElementById("burger5-f").style.display = "none";
+                document.getElementById("burger5-b").style.display = "";
+            }
+            function Burger5Reverse()
+            {
+                document.getElementById("burger5-f").style.display = "";
+                document.getElementById("burger5-b").style.display = "none";
+            }
+            function Burger6()
+            {
+                document.getElementById("burger6-f").style.display = "none";
+                document.getElementById("burger6-b").style.display = "";
+            }
+            function Burger6Reverse()
+            {
+                document.getElementById("burger6-f").style.display = "";
+                document.getElementById("burger6-b").style.display = "none";
+            }
+            function Burger7()
+            {
+                document.getElementById("burger7-f").style.display = "none";
+                document.getElementById("burger7-b").style.display = "";
+            }
+            function Burger7Reverse()
+            {
+                document.getElementById("burger7-f").style.display = "";
+                document.getElementById("burger7-b").style.display = "none";
+            }
+            function Burger8()
+            {
+                document.getElementById("burger8-f").style.display = "none";
+                document.getElementById("burger8-b").style.display = "";
+            }
+            function Burger8Reverse()
+            {
+                document.getElementById("burger8-f").style.display = "";
+                document.getElementById("burger8-b").style.display = "none";
+            }
+            function Burger9()
+            {
+                document.getElementById("burger9-f").style.display = "none";
+                document.getElementById("burger9-b").style.display = "";
+            }
+            function Burger9Reverse()
+            {
+                document.getElementById("burger9-f").style.display = "";
+                document.getElementById("burger9-b").style.display = "none";
+            }
+            function Burger10()
+            {
+                document.getElementById("burger10-f").style.display = "none";
+                document.getElementById("burger10-b").style.display = "";
+            }
+            function Burger10Reverse()
+            {
+                document.getElementById("burger10-f").style.display = "";
+                document.getElementById("burger10-b").style.display = "none";
+            }
+            function BurgerJ()
+            {
+                document.getElementById("burgerJ-f").style.display = "none";
+                document.getElementById("burgerJ-b").style.display = "";
+            }
+            function BurgerJReverse()
+            {
+                document.getElementById("burgerJ-f").style.display = "";
+                document.getElementById("burgerJ-b").style.display = "none";
+            }
+            function BurgerQ()
+            {
+                document.getElementById("burgerQ-f").style.display = "none";
+                document.getElementById("burgerQ-b").style.display = "";
+            }
+            function BurgerQReverse()
+            {
+                document.getElementById("burgerQ-f").style.display = "";
+                document.getElementById("burgerQ-b").style.display = "none";
+            }
+            function BurgerK()
+            {
+                document.getElementById("burgerK-f").style.display = "none";
+                document.getElementById("burgerK-b").style.display = "";
+            }
+            function BurgerKReverse()
+            {
+                document.getElementById("burgerK-f").style.display = "";
+                document.getElementById("burgerK-b").style.display = "none";
+            }
+            function GuitarA()
+            {
+                document.getElementById("guitarA-f").style.display = "none";
+                document.getElementById("guitarA-b").style.display = "";
+            }
+            function GuitarAReverse()
+            {
+                document.getElementById("guitarA-f").style.display = "";
+                document.getElementById("guitarA-b").style.display = "none";
+            }
+            function Guitar2()
+            {
+                document.getElementById("guitar2-f").style.display = "none";
+                document.getElementById("guitar2-b").style.display = "";
+            }
+            function Guitar2Reverse()
+            {
+                document.getElementById("guitar2-f").style.display = "";
+                document.getElementById("guitar2-b").style.display = "none";
+            }
+            function Guitar3()
+            {
+                document.getElementById("guitar3-f").style.display = "none";
+                document.getElementById("guitar3-b").style.display = "";
+            }
+            function Guitar3Reverse()
+            {
+                document.getElementById("guitar3-f").style.display = "";
+                document.getElementById("guitar3-b").style.display = "none";
+            }
+            function Guitar4()
+            {
+                document.getElementById("guitar4-f").style.display = "none";
+                document.getElementById("guitar4-b").style.display = "";
+            }
+            function Guitar4Reverse()
+            {
+                document.getElementById("guitar4-f").style.display = "";
+                document.getElementById("guitar4-b").style.display = "none";
+            }
+            function Guitar5()
+            {
+                document.getElementById("guitar5-f").style.display = "none";
+                document.getElementById("guitar5-b").style.display = "";
+            }
+            function Guitar5Reverse()
+            {
+                document.getElementById("guitar5-f").style.display = "";
+                document.getElementById("guitar5-b").style.display = "none";
+            }
+            function Guitar6()
+            {
+                document.getElementById("guitar6-f").style.display = "none";
+                document.getElementById("guitar6-b").style.display = "";
+            }
+            function Guitar6Reverse()
+            {
+                document.getElementById("guitar6-f").style.display = "";
+                document.getElementById("guitar6-b").style.display = "none";
+            }
+            function Guitar7()
+            {
+                document.getElementById("guitar7-f").style.display = "none";
+                document.getElementById("guitar7-b").style.display = "";
+            }
+            function Guitar7Reverse()
+            {
+                document.getElementById("guitar7-f").style.display = "";
+                document.getElementById("guitar7-b").style.display = "none";
+            }
+            function Guitar8()
+            {
+                document.getElementById("guitar8-f").style.display = "none";
+                document.getElementById("guitar8-b").style.display = "";
+            }
+            function Guitar8Reverse()
+            {
+                document.getElementById("guitar8-f").style.display = "";
+                document.getElementById("guitar8-b").style.display = "none";
+            }
+            function Guitar9()
+            {
+                document.getElementById("guitar9-f").style.display = "none";
+                document.getElementById("guitar9-b").style.display = "";
+            }
+            function Guitar9Reverse()
+            {
+                document.getElementById("guitar9-f").style.display = "";
+                document.getElementById("guitar9-b").style.display = "none";
+            }
+            function Guitar10()
+            {
+                document.getElementById("guitar10-f").style.display = "none";
+                document.getElementById("guitar10-b").style.display = "";
+            }
+            function Guitar10Reverse()
+            {
+                document.getElementById("guitar10-f").style.display = "";
+                document.getElementById("guitar10-b").style.display = "none";
+            }
+            function GuitarJ()
+            {
+                document.getElementById("guitarJ-f").style.display = "none";
+                document.getElementById("guitarJ-b").style.display = "";
+            }
+            function GuitarJReverse()
+            {
+                document.getElementById("guitarJ-f").style.display = "";
+                document.getElementById("guitarJ-b").style.display = "none";
+            }
+            function GuitarQ()
+            {
+                document.getElementById("guitarQ-f").style.display = "none";
+                document.getElementById("guitarQ-b").style.display = "";
+            }
+            function GuitarQReverse()
+            {
+                document.getElementById("guitarQ-f").style.display = "";
+                document.getElementById("guitarQ-b").style.display = "none";
+            }
+            function GuitarK()
+            {
+                document.getElementById("guitarK-f").style.display = "none";
+                document.getElementById("guitarK-b").style.display = "";
+            }
+            function GuitarKReverse()
+            {
+                document.getElementById("guitarK-f").style.display = "";
+                document.getElementById("guitarK-b").style.display = "none";
+            }
+            function PaintA()
+            {
+                document.getElementById("paintA-f").style.display = "none";
+                document.getElementById("paintA-b").style.display = "";
+            }
+            function PaintAReverse()
+            {
+                document.getElementById("paintA-f").style.display = "";
+                document.getElementById("paintA-b").style.display = "none";
+            }
+            function Paint2()
+            {
+                document.getElementById("paint2-f").style.display = "none";
+                document.getElementById("paint2-b").style.display = "";
+            }
+            function Paint2Reverse()
+            {
+                document.getElementById("paint2-f").style.display = "";
+                document.getElementById("paint2-b").style.display = "none";
+            }
+            function Paint3()
+            {
+                document.getElementById("paint3-f").style.display = "none";
+                document.getElementById("paint3-b").style.display = "";
+            }
+            function Paint3Reverse()
+            {
+                document.getElementById("paint3-f").style.display = "";
+                document.getElementById("paint3-b").style.display = "none";
+            }
+            function Paint4()
+            {
+                document.getElementById("paint4-f").style.display = "none";
+                document.getElementById("paint4-b").style.display = "";
+            }
+            function Paint4Reverse()
+            {
+                document.getElementById("paint4-f").style.display = "";
+                document.getElementById("paint4-b").style.display = "none";
+            }
+            function Paint5()
+            {
+                document.getElementById("paint5-f").style.display = "none";
+                document.getElementById("paint5-b").style.display = "";
+            }
+            function Paint5Reverse()
+            {
+                document.getElementById("paint5-f").style.display = "";
+                document.getElementById("paint5-b").style.display = "none";
+            }
+            function Paint6()
+            {
+                document.getElementById("paint6-f").style.display = "none";
+                document.getElementById("paint6-b").style.display = "";
+            }
+            function Paint6Reverse()
+            {
+                document.getElementById("paint6-f").style.display = "";
+                document.getElementById("paint6-b").style.display = "none";
+            }
+            function Paint7()
+            {
+                document.getElementById("paint7-f").style.display = "none";
+                document.getElementById("paint7-b").style.display = "";
+            }
+            function Paint7Reverse()
+            {
+                document.getElementById("paint7-f").style.display = "";
+                document.getElementById("paint7-b").style.display = "none";
+            }
+            function Paint8()
+            {
+                document.getElementById("paint8-f").style.display = "none";
+                document.getElementById("paint8-b").style.display = "";
+            }
+            function Paint8Reverse()
+            {
+                document.getElementById("paint8-f").style.display = "";
+                document.getElementById("paint8-b").style.display = "none";
+            }
+            function Paint9()
+            {
+                document.getElementById("paint9-f").style.display = "none";
+                document.getElementById("paint9-b").style.display = "";
+            }
+            function Paint9Reverse()
+            {
+                document.getElementById("paint9-f").style.display = "";
+                document.getElementById("paint9-b").style.display = "none";
+            }
+            function Paint10()
+            {
+                document.getElementById("paint10-f").style.display = "none";
+                document.getElementById("paint10-b").style.display = "";
+            }
+            function Paint10Reverse()
+            {
+                document.getElementById("paint10-f").style.display = "";
+                document.getElementById("paint10-b").style.display = "none";
+            }
+            function PaintJ()
+            {
+                document.getElementById("paintJ-f").style.display = "none";
+                document.getElementById("paintJ-b").style.display = "";
+            }
+            function PaintJReverse()
+            {
+                document.getElementById("paintJ-f").style.display = "";
+                document.getElementById("paintJ-b").style.display = "none";
+            }
+            function PaintQ()
+            {
+                document.getElementById("paintQ-f").style.display = "none";
+                document.getElementById("paintQ-b").style.display = "";
+            }
+            function PaintQReverse()
+            {
+                document.getElementById("paintQ-f").style.display = "";
+                document.getElementById("paintQ-b").style.display = "none";
+            }
+            function PaintK()
+            {
+                document.getElementById("paintK-f").style.display = "none";
+                document.getElementById("paintK-b").style.display = "";
+            }
+            function PaintKReverse()
+            {
+                document.getElementById("paintK-f").style.display = "";
+                document.getElementById("paintK-b").style.display = "none";
+            }
+		</script>
+	</body>
+</html>
