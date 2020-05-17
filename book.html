@@ -1,0 +1,255 @@
+<html>
+	<head>
+        <title>Happy Anniversary!</title>
+        <link rel="shortcut icon" href="heart.ico">
+        <style>
+            body
+            {
+                background-color: lavenderblush;  
+                border-style: solid;
+                border-color: lightcoral;
+				color: gray;
+                text-align: center;
+                padding: 25px;
+                font-family: Impact, serif;
+				font-size: 20;
+            }
+            #title
+            {
+                color: gray;
+                font-size: 25px;
+            }
+            button
+            {
+                color: gray;
+                font-size: 20px;
+                font-family: Impact, serif;
+                background-color: whitesmoke;
+                border-color: lightcoral;
+            }
+            button:hover
+            {
+                color: whitesmoke;
+                background-color:lightcoral;
+                border-color: gray;
+				opacity: 75%;
+				transition: 0.5s;
+            }
+            button:disabled
+            {
+                color: gray;
+                background-color: lavenderblush;
+                border-color: darkgray;
+				opacity: 50%;
+            }
+            input
+            {
+                font-size: 15px;
+                text-align: center;
+            }
+			img
+			{
+				height: 325;
+			}
+        </style>
+    </head>
+	
+	<body>
+		<p style="font-size:25px; border-bottom:solid; border-color:lightcoral; border-width:thin; padding:15px;">Happy Anniversary!</p>
+		<p style="font-size:25px;">Book</p>
+		<p>This is like a book full of pictures and stuff!</p>
+		<p>The real life one is like a little book!</p>
+		<p>But for this one you just gotta click on the picture to see the next one!</p>
+		
+		<img src="book.jpg" style="border-style:solid; border-color:gray; height:250;">
+		<br><br>
+		<img src="lyrics-page-001.jpg" id="picture1" onclick="Picture1()">
+		<img src="lyrics-page-002.jpg" id="picture2" onclick="Picture2()" style="display:none;">
+		<img src="lyrics-page-003.jpg" id="picture3" onclick="Picture3()" style="display:none;">
+		<img src="lyrics-page-004.jpg" id="picture4" onclick="Picture4()" style="display:none;">
+		<img src="lyrics-page-005.jpg" id="picture5" onclick="Picture5()" style="display:none;">
+		<img src="lyrics-page-006.jpg" id="picture6" onclick="Picture6()" style="display:none;">
+		<img src="lyrics-page-007.jpg" id="picture7" onclick="Picture7()" style="display:none;">
+		<img src="lyrics-page-008.jpg" id="picture8" onclick="Picture8()" style="display:none;">
+		<img src="lyrics-page-009.jpg" id="picture9" onclick="Picture9()" style="display:none;">
+		<img src="lyrics-page-010.jpg" id="picture10" onclick="Picture10()" style="display:none;">
+		<img src="lyrics-page-011.jpg" id="picture11" onclick="Picture11()" style="display:none;">
+		<img src="lyrics-page-012.jpg" id="picture12" onclick="Picture12()" style="display:none;">
+		<img src="lyrics-page-013.jpg" id="picture13" onclick="Picture13()" style="display:none;">
+		<img src="lyrics-page-014.jpg" id="picture14" onclick="Picture14()" style="display:none;">
+		<img src="lyrics-page-015.jpg" id="picture15" onclick="Picture15()" style="display:none;">
+		<img src="lyrics-page-016.jpg" id="picture16" onclick="Picture16()" style="display:none;">
+		<img src="lyrics-page-017.jpg" id="picture17" onclick="Picture17()" style="display:none;">
+		<img src="lyrics-page-018.jpg" id="picture18" onclick="Picture18()" style="display:none;">
+		<img src="lyrics-page-019.jpg" id="picture19" onclick="Picture19()" style="display:none;">
+		<img src="lyrics-page-020.jpg" id="picture20" onclick="Picture20()" style="display:none;">
+		<img src="lyrics-page-021.jpg" id="picture21" onclick="Picture21()" style="display:none;">
+		<img src="lyrics-page-022.jpg" id="picture22" onclick="Picture22()" style="display:none;">
+		<img src="lyrics-page-023.jpg" id="picture23" onclick="Picture23()" style="display:none;">
+		<img src="lyrics-page-024.jpg" id="picture24" onclick="Picture24()" style="display:none;">
+		<img src="lyrics-page-025.jpg" id="picture25" onclick="Picture25()" style="display:none;">
+		<br><br>
+		<button onclick="Restart()">Go back to beginning</button>
+		
+		<br><br><br><br>
+		<button onclick="document.location = 'presents.html'" style="font-size:15;">Click here to go back to the last page</button>
+		<br><br>
+		<button onclick="document.location = 'home.html'" style="font-size:15;">Click here to go back to the home page</button>
+		
+		<script>
+			function Restart()
+			{
+				document.getElementById("picture1").style.display = "";
+				document.getElementById("picture2").style.display = "none";
+				document.getElementById("picture3").style.display = "none";
+				document.getElementById("picture4").style.display = "none";
+				document.getElementById("picture5").style.display = "none";
+				document.getElementById("picture6").style.display = "none";
+				document.getElementById("picture7").style.display = "none";
+				document.getElementById("picture8").style.display = "none";
+				document.getElementById("picture9").style.display = "none";
+				document.getElementById("picture10").style.display = "none";
+				document.getElementById("picture11").style.display = "none";
+				document.getElementById("picture12").style.display = "none";
+				document.getElementById("picture13").style.display = "none";
+				document.getElementById("picture14").style.display = "none";
+				document.getElementById("picture15").style.display = "none";
+				document.getElementById("picture16").style.display = "none";
+				document.getElementById("picture17").style.display = "none";
+				document.getElementById("picture18").style.display = "none";
+				document.getElementById("picture19").style.display = "none";
+				document.getElementById("picture20").style.display = "none";
+				document.getElementById("picture21").style.display = "none";
+				document.getElementById("picture22").style.display = "none";
+				document.getElementById("picture23").style.display = "none";
+				document.getElementById("picture24").style.display = "none";
+				document.getElementById("picture25").style.display = "none";
+			}
+			
+			function Picture1()
+			{
+				document.getElementById("picture1").style.display = "none";
+				document.getElementById("picture2").style.display = "";
+			}
+			function Picture2()
+			{
+				document.getElementById("picture2").style.display = "none";
+				document.getElementById("picture3").style.display = "";
+			}
+			function Picture3()
+			{
+				document.getElementById("picture3").style.display = "none";
+				document.getElementById("picture4").style.display = "";
+			}
+			function Picture4()
+			{
+				document.getElementById("picture4").style.display = "none";
+				document.getElementById("picture5").style.display = "";
+			}
+			function Picture5()
+			{
+				document.getElementById("picture5").style.display = "none";
+				document.getElementById("picture6").style.display = "";
+			}
+			function Picture6()
+			{
+				document.getElementById("picture6").style.display = "none";
+				document.getElementById("picture7").style.display = "";
+			}
+			function Picture7()
+			{
+				document.getElementById("picture7").style.display = "none";
+				document.getElementById("picture8").style.display = "";
+			}
+			function Picture8()
+			{
+				document.getElementById("picture8").style.display = "none";
+				document.getElementById("picture9").style.display = "";
+			}
+			function Picture9()
+			{
+				document.getElementById("picture9").style.display = "none";
+				document.getElementById("picture10").style.display = "";
+			}
+			function Picture10()
+			{
+				document.getElementById("picture10").style.display = "none";
+				document.getElementById("picture11").style.display = "";
+			}
+			function Picture11()
+			{
+				document.getElementById("picture11").style.display = "none";
+				document.getElementById("picture12").style.display = "";
+			}
+			function Picture12()
+			{
+				document.getElementById("picture12").style.display = "none";
+				document.getElementById("picture13").style.display = "";
+			}
+			function Picture13()
+			{
+				document.getElementById("picture13").style.display = "none";
+				document.getElementById("picture14").style.display = "";
+			}
+			function Picture14()
+			{
+				document.getElementById("picture14").style.display = "none";
+				document.getElementById("picture15").style.display = "";
+			}
+			function Picture15()
+			{
+				document.getElementById("picture15").style.display = "none";
+				document.getElementById("picture16").style.display = "";
+			}
+			function Picture16()
+			{
+				document.getElementById("picture16").style.display = "none";
+				document.getElementById("picture17").style.display = "";
+			}
+			function Picture17()
+			{
+				document.getElementById("picture17").style.display = "none";
+				document.getElementById("picture18").style.display = "";
+			}
+			function Picture18()
+			{
+				document.getElementById("picture18").style.display = "none";
+				document.getElementById("picture19").style.display = "";
+			}
+			function Picture19()
+			{
+				document.getElementById("picture19").style.display = "none";
+				document.getElementById("picture20").style.display = "";
+			}
+			function Picture20()
+			{
+				document.getElementById("picture20").style.display = "none";
+				document.getElementById("picture21").style.display = "";
+			}
+			function Picture21()
+			{
+				document.getElementById("picture21").style.display = "none";
+				document.getElementById("picture22").style.display = "";
+			}
+			function Picture22()
+			{
+				document.getElementById("picture22").style.display = "none";
+				document.getElementById("picture23").style.display = "";
+			}
+			function Picture23()
+			{
+				document.getElementById("picture23").style.display = "none";
+				document.getElementById("picture24").style.display = "";
+			}
+			function Picture24()
+			{
+				document.getElementById("picture24").style.display = "none";
+				document.getElementById("picture25").style.display = "";
+			}
+			function Picture25()
+			{
+				alert("The was the last picture!");
+			}
+		</script>
+	</body>
+</html>
